@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>services</title>
+       
+    </head>
+    <body>
+        <h3>Our Services include:</h3>
+        <div class="service">
+            <div class="information">
+
+                <div class="form" id="details">
+                    <h3>fill in your details:</h3>
+                <form method="post" action="info.php">
+                    Name<input type="text" name="name" placeholder="Name">
+                    email<input type="text" name="Email" placeholder="email">
+                    Phone<input type="text" name="Phone " placeholder="Phone">
+                    age<input type="text" name="Age" placeholder="age">
+                    location<input type="text" name="Location" placeholder="location">
+                    doctor's mail<input type="text" name="Email" placeholder=" doctormail"><br>
+                    <textarea>Patient's complains and suggestions</textarea>
+                    <select name="gender">
+                        <option value="gender">gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <button  type="submit">
+                    submit
+                    </button>
+                </form>
+                </div> 
+                <div class="serve">
+                    <ul>
+                        <li>Pharmacy Services.</li>
+                        <li> Laboratory Services.</li>
+                        <li> Radiology Services.</li>
+                        <li> Endoscopy Services.</li>
+                        <li> Accident and Emergency Services.</li>
+                    </ul>
+                </div>
+    
+                <div class="details">
+                    <h2>A quick reminder:</h2>
+                    <p>Hospitals are institutions that deal with health care activities. <br>
+                        They offer treatment to patients with specialized staff and equipment.<br> In other words, hospitals serve humanity and play a vital role in the social welfare of any society.</p>
+                
+                </div>
+                
+            </div>
+            </div>
+                  
+                
+            
+           
+            <!--we add an image to the site to make it appealing-->
+            <section>
+            <div class="pic">
+                <div class="doc">
+                <img src="images/doc-pat.jpg" style="width:320px;height:185px;">
+                <p>We care about you</p>
+            </div>
+                <div class="surge">
+                <img src="images/surgeon.jpg" style="width:360px;height:200px;">
+                <p>We operate on even the minor details <br>in your health to ensure<br>
+                     good life of our patients is maintained</p>
+            </div>
+                <div class="masks">
+                <img src="images/masks.jpeg" style="width:360px;height:200px;">
+                <p>We teach health protocols and cautions<br>
+                to our patients to reduce the risk of getting infected</p>
+            </div>
+                 </div>
+             </section>
+            <!--about us details-->
+        <style>
+        body{
+        background-color:aquamarine;
+        }
+       .form{
+        outline-color: darkgray;
+        width:13%;
+        height:50%;
+        border:2px solid;
+        background-color:#111;
+        color:aliceblue;
+        float:inline-end;
+        flex-direction:column;
+       }
+       .pic{
+        background-color:black;
+        color: aliceblue;
+        width: 100%;
+        height: 290px;
+        display: flex;
+        align-items:center;
+        float: inline-start;
+        align-content: inline;
+        font-display:inherit;
+        justify-content:space-between;
+        margin-inline-start: 8px;
+        margin-top: 29px;
+        margin-inline-end: 6px;
+        opacity:none;
+    }
+    .details{
+        background-color:antiquewhite;
+        width: 40%;
+        height: 5%;
+        border-style: dotted;
+        border-color: #111;
+        border-radius: 20px;
+        padding: 5px;
+         }
+         
+      </style>
+   
+         </body>
+</html>
