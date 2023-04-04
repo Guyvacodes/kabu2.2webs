@@ -5,39 +5,67 @@
        
     </head>
     <body>
-        <h3>Our Services include:</h3>
+        <div id="logo">
+            <img src="images/hospital.jpg"  style="width:200px;">
+            <h1 style="font-family: 'Courier New', Courier, monospace;margin-top: 1cm;">Guyva Clinic</h1>
+                <nav class="nav" >
+                 
+                    <a href="parralax.html">Home</a>
+                   
+                    <!--dropdown-->
+                <div class="dropdown">
+                    <a href="#">Contacts</a>
+                  
+                    <div class="dropdown-content">
+                      <a href="mail">Guyvaclinic@gmail.com</a>
+                      <a href="#">Twitter@Guyvaclinic</a>
+                      <a href="#">Instagram@Guyvaclinic</a>
+                      <a href="#">Snapchat@Guyvaclinic</a>
+                    </div>
+                    </div>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+              
+                 
+                      
+            </nav>
+           
+        </div>
+        <div style="display:flex;justify-content: space-between;margin-top: 4cm;">
+       
+        <div class="serve">
+            <h3>Our Services include:</h3>
+            <ul>
+                <li>Pharmacy Services.</li>
+                <li> Laboratory Services.</li>
+                <li> Radiology Services.</li>
+                <li> Endoscopy Services.</li>
+                <li> Accident and Emergency Services.</li>
+            </ul>
+        </div>
         <div class="service">
             <div class="information">
 
-                <div class="form" id="details">
-                    <h3>fill in your details:</h3>
+                <div class="form">
+                    <h3>Book an appointment:</h3>
                 <form method="post" action="info.php">
                     Name<input type="text" name="name" placeholder="Name">
                     email<input type="text" name="Email" placeholder="email">
                     Phone<input type="text" name="Phone " placeholder="Phone">
                     age<input type="text" name="Age" placeholder="age">
                     location<input type="text" name="Location" placeholder="location">
-                    doctor's mail<input type="text" name="Email" placeholder=" doctormail"><br>
-                    <textarea>Patient's complains and suggestions</textarea>
+                     <textarea>Patient's complains and suggestions</textarea>
                     <select name="gender">
                         <option value="gender">gender</option>
                         <option value="male">male</option>
                         <option value="female">female</option>
                     </select>
-                    <button  type="submit">
+                    <button  type="submit" onclick="parent.location='home.html'">
                     submit
                     </button>
                 </form>
                 </div> 
-                <div class="serve">
-                    <ul>
-                        <li>Pharmacy Services.</li>
-                        <li> Laboratory Services.</li>
-                        <li> Radiology Services.</li>
-                        <li> Endoscopy Services.</li>
-                        <li> Accident and Emergency Services.</li>
-                    </ul>
-                </div>
+                
     
                 <div class="details">
                     <h2>A quick reminder:</h2>
@@ -46,6 +74,7 @@
                 
                 </div>
                 
+            </div>
             </div>
             </div>
                   
@@ -58,6 +87,10 @@
                 <div class="doc">
                 <img src="images/doc-pat.jpg" style="width:320px;height:185px;">
                 <p>We care about you</p>
+            </div>
+            <div class="doc" style="width:300px;">
+                <img src="images/johnny.webp" style="width:320px;height:185px;">
+                <p>We have  the most qualified medics on the planet as we believe </p>
             </div>
                 <div class="surge">
                 <img src="images/surgeon.jpg" style="width:360px;height:200px;">
@@ -76,15 +109,21 @@
         body{
         background-color:aquamarine;
         }
+        #logo{
+            display: flex;
+            justify-content: space-between;
+            background-color:beige;
+        }
        .form{
         outline-color: darkgray;
-        width:13%;
-        height:50%;
+        width:6.1cm;
+        height:fit-content;
         border:2px solid;
         background-color:#111;
         color:aliceblue;
         float:inline-end;
         flex-direction:column;
+        border-radius: 10px;
        }
        .pic{
         background-color:black;
@@ -109,9 +148,63 @@
         border-style: dotted;
         border-color: #111;
         border-radius: 20px;
-        padding: 5px;
+        margin-right: 6cm;
          }
-         
+         .nav{
+            justify-content: space-around;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color:indianred;
+            font-size:medium;
+            font-weight: 450;
+            height:40px;
+            padding: 6px;
+            width:fit-content;
+            border-radius: 0.4cm;
+            margin-top: 1cm;
+            margin-right: 1cm;
+         }
+          /*drop down*/
+ /* Dropdown Button */
+ .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+   
       </style>
    
          </body>
