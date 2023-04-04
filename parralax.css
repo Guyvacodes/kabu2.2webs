@@ -1,18 +1,27 @@
-.nav{
-  justify-content: space-between;
+nav{
+  justify-content: space-around;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:indianred;
+  font-size:medium;
+  font-weight: 470;
+  height:40px;
+  padding: 6px;
+  width:fit-content;
+  border-radius: 0.4cm;
   
 }
     
 body{
      background-color: #111;
-     background-image: url("images/hospital.jpg");
+     background-image: url("images/stethescope.jpg");
      background-repeat: no-repeat;
      background-size: cover;
+     text-decorat
 }
 #fitin{
   color:blue;
-  display: flex;
-  justify-content: space-between;
+  display:flex;
+  justify-content:space-between;
 }
     
     .doc{
